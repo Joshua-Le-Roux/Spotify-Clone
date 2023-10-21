@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css'; //install and import bootstrap to use 
+import '@fortawesome/fontawesome-free/css/all.min.css'; //install and import fa for icons
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

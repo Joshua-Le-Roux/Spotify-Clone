@@ -1,38 +1,183 @@
+/* applied to the entire page */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black ;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "section main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main main";
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Section Left */
+section {
+  text-align:center ;
+  grid-area: section;
+  display: block;
+  max-width: 380px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left {
+  padding: 10px;
+  max-width: 100% !important;
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.section-card {
+  background-color: rgb(25, 26, 26) !important;
+  color: white !important;
+  text-align: left !important;
+  max-width: 360px !important;
+}
+
+i {
+  padding: 10px !important;
+}
+
+text {
+  padding-right: 170px;
+}
+
+.playList {
+  padding: 5px;
+  max-width: 315px;
+  background-color: rgb(63, 65, 65) !important;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: white !important;
+  border-radius: 50px !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  color: black !important;
+}
+
+aside {
+  padding-left: 10px !important;
+}
+
+.bottom {
+  font-size: 12px;
+  padding-right: 10px !important;
+}
+
+#lang {
+  background-color: black;
+  color: white;
+  border-radius: 50px !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  padding-right: 15px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Main */
+
+main {
+  text-align:center ;
+  grid-area: main;
+  display: block;
+  max-width: 100% !important;
+}
+
+.right {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.main-card {
+  background-color: rgb(25, 26, 26, 0.8) !important;
+  color: white !important;
+  text-align: left !important;
+  max-width: 100% !important;
+}
+
+.Top-container {
+  max-width: 100% !important;
+  position: sticky;
+  top: 0;
+  z-index: 999 !important;
+}
+
+.sign-up {
+  background-color: rgb(21, 22, 22, 0.5) !important;
+  border-radius: 50px !important;
+  border-style: solid;
+  border-color: rgb(21, 22, 22, 0.5) !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  color: white !important;
+  padding: 10px;
+  margin-left: 900px;
+  margin-right: 10px;
+}
+
+.log-in {
+  background-color: white !important;
+  border-radius: 50px !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  color: black !important;
+  padding: 10px;
+}
+
+.g-4 {
+  margin-top: 10px !important;
+  background-color: rgb(25, 26, 26) !important;
+  text-align: center !important;
+  max-width: 100%;
+  margin-left: 0 !important;
+  padding-left: 10px;
+  border-radius: 12px;
+}
+
+.main-cards2 {
+  text-align: left !important;
+  padding: 10px;
+  padding-bottom: 0px;
+  background-color: rgb(26, 28, 28) !important;
+  color: white !important;
+  max-width: 200px !important;
+  margin-bottom: 10px !important;
+  min-height: 287px !important;
+}
+
+.cover-imgs {
+  max-width: 80% !important;
+  max-height: 80% !important;
+  border-radius: 10px;
+  margin-left: 15px !important;
+}
+
+.focus {
+  text-align: left;
+  padding: 10px !important;
+  padding-bottom: 20px !important;
+}
+
+.show-all {
+  margin-left: 990px !important;
+  font-size: 16px;
+}
+
+.show-all2 {
+  margin-left: 900px !important;
+  font-size: 16px;
+}
+
+table {
+  box-sizing: border-box !important;
+  text-align: center !important;
+  padding: 8px !important;
+  min-width: 60% !important;
+}
+
+.sm-icons {
+  margin-left: 950px !important;
+}
+
+footer {
+  text-align: left;
 }
